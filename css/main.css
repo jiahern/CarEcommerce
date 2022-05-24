@@ -60,14 +60,11 @@ body {
 
 .logo img {
   height: auto;
-  width: 65px;
+  width: 50px;
 }
 
 .logo.top {
   margin-left: 2rem;
-}
-.container {
-  padding-inline: 1.5rem;
 }
 
 .nav-open-btn {
@@ -93,6 +90,7 @@ body {
   display: flex;
   align-items: center;
   padding-block: 1rem;
+  padding-inline: 1.5rem;
 }
 
 .header.active {
@@ -189,34 +187,49 @@ body {
   opacity: 1;
   pointer-events: all;
 }
+
+/* Handle Desktop Screen Size*/
+@media (min-width: 992px) {
+  /* Header  */
+
+  .nav-open-btn,
+  .nav-close-btn,
+  .navbar .logo,
+  .nav-title-logo,
+  .navbar-item-icon,
+  .nav-action-btn i,
+  .overlay {
+    display: none;
+  }
+
+  /* Reset all Navbar CSS */
+  .navbar,
+  .navbar-list,
+  .navbar-link,
+  .header .container {
+    all: unset;
+  }
+
+  .navbar,
+  .navbar-list {
+    display: flex;
+    gap: 3em;
+  }
+
+  .header .container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .logo img {
+    height: auto;
+    width: 55px;
+  }
+}
 /* 
-.navbar {
-  display: flex;
-  align-items: center;
-  height: 4rem;
-}
 
-nav {
-  flex: 1;
-  text-align: left;
-  padding-left: 40px;
-  font-weight: 500;
-}
-
-nav ul {
-  display: inline-block;
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 32px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333333;
-}
 
 
 .banner {

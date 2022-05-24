@@ -6,11 +6,6 @@ const navOpenButton = document.querySelector("[data-nav-open-btn]");
 const navBar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 
-console.log(overlay);
-console.log(navOpenButton);
-console.log(navBar);
-console.log(navCloseBtn);
-
 const navElements = [overlay, navOpenButton, navCloseBtn];
 
 for (let i = 0; i < navElements.length; i++) {
