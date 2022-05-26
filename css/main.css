@@ -35,8 +35,13 @@
   --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
-  /* Spacing */
-  --section-padding: 60px;
+  /* Container Padding */
+  --desktop-padding: 7rem;
+  --mobile-padding: 1.5rem;
+
+  /* Button Border Radius  */
+  --button-radius: 4px;
+  --section-radius: 10px;
 }
 
 * {
@@ -58,7 +63,7 @@ body {
   font-family: var(--font-primary);
   color: var(--text-color);
   padding-block-start: 52.4px;
-  background-color: var(--bg-grey-color);
+  background-color: white;
 }
 
 .logo img {
@@ -92,7 +97,7 @@ button .nav-open-btn {
 }
 
 .container {
-  padding-inline: 1.5rem;
+  padding-inline: var(--mobile-padding);
 }
 
 .header .container {
@@ -236,20 +241,21 @@ button .nav-open-btn {
 
 form.nosubmit {
   display: inline-flex;
+  justify-content: center;
   width: 100%;
   gap: 1rem;
   font-size: var(--fs-11);
   border: none;
   padding: 0;
-  border-radius: 10px;
+  border-radius: var(--button-radius);
 }
 
 input.nosubmit {
   display: block;
   border: 1px solid #ccc;
   background-color: white;
-  border-radius: 10px;
-  width: 100%;
+  border-radius: var(--button-radius);
+  width: 60%;
   padding: 11px 4px 11px 40px;
   background: transparent url(/css/search.svg) no-repeat 13px center;
 }
@@ -260,7 +266,7 @@ input.nosubmit {
   font-weight: 500;
   color: white;
   padding: 0.75em 2em;
-  border-radius: 10px;
+  border-radius: var(--button-radius);
   text-decoration: none;
 }
 
@@ -290,7 +296,7 @@ input.nosubmit {
   color: white;
   height: 2.2rem;
   width: 8rem;
-  border-radius: 10px;
+  border-radius: var(--button-radius);
   text-decoration: none;
 }
 
@@ -299,6 +305,7 @@ input.nosubmit {
 @media (min-width: 992px) {
   body {
     padding-block-start: 70px;
+    background-color: white;
   }
   /* Header  */
 
@@ -362,13 +369,38 @@ input.nosubmit {
     height: 15rem;
   }
 
+  /* Searbar Section  */
+  .search-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  form.nosubmit {
+    /* height: 48px; */
+    width: 80%;
+  }
+
+  input.nosubmit {
+    font-size: var(--fs-10);
+  }
+
+  button.submit {
+    width: 10rem;
+    font-size: var(--fs-10);
+  }
+
   /* Filter Section  */
   .filter-title {
     display: none;
   }
+
+  .container.filter-sec {
+    padding-inline: var(--desktop-padding);
+  }
   .filter {
+    border-radius: var(--section-radius);
     position: relative;
-    max-width: 1248px;
+    min-width: 90%;
     margin-top: -4rem;
     background-color: white;
     padding: 0.5rem 4rem 2rem 4rem;
@@ -377,8 +409,22 @@ input.nosubmit {
   }
 
   .filter-button {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: var(--fs-10);
+    font-weight: 600;
     color: var(--text-color);
     background-color: white;
     border: 1px solid #ccc;
+  }
+
+  /* Car List Section  */
+
+  .car-section {
+    display: block;
+    min-width: 90%;
+  }
+  .car-section .container {
+    padding-inline: var(--desktop-padding);
   }
 }
