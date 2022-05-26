@@ -18,7 +18,7 @@
   --fs-4: 2rem;
   --fs-5: 1.8rem;
   --fs-6: 1.6rem;
-  --fs-7: 1.4rem;
+  --fs-7: 1.5rem;
   --fs-8: 1.2rem;
   --fs-9: 1rem;
   --fs-10: 0.8rem;
@@ -42,6 +42,10 @@
   /* Button Border Radius  */
   --button-radius: 4px;
   --section-radius: 10px;
+
+  /* Spacing  */
+  --section-spacing-mobile: 1.3rem;
+  --section-spacing-desktop: 3rem;
 }
 
 * {
@@ -66,6 +70,8 @@ body {
   background-color: white;
 }
 
+/*  */
+/* Navigation Bar  */
 .logo img {
   height: auto;
   width: 50px;
@@ -77,8 +83,6 @@ body {
 
 button .nav-open-btn {
   color: var(--text-color);
-  /* font-size: var(--fs-4); */
-  /* padding: 0px !important; */
 }
 
 .nav-open-btn:is(:hover, :focus) {
@@ -165,7 +169,7 @@ button .nav-open-btn {
 }
 
 .navbar-item {
-  padding-block: 1.3rem;
+  padding-block: 1rem;
 }
 .navbar-link {
   font-size: var(--fs-9);
@@ -231,11 +235,12 @@ button .nav-open-btn {
   height: 7rem;
 }
 
+/*  */
 /* Search Bar Section */
 .search-box {
   display: block;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: var(--section-spacing-mobile);
   width: 100%;
 }
 
@@ -270,8 +275,10 @@ input.nosubmit {
   text-decoration: none;
 }
 
+/*  */
+/* Filter Section  */
 .filter-box {
-  margin-top: 1rem;
+  margin-top: var(--section-spacing-mobile);
 }
 
 .filter-title {
@@ -284,7 +291,7 @@ input.nosubmit {
 .filter-elements {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
   justify-content: center;
   margin-top: 1rem;
 }
@@ -298,10 +305,19 @@ input.nosubmit {
   width: 8rem;
   border-radius: var(--button-radius);
   text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.car-section {
+  margin-top: var(--section-spacing-mobile);
+}
+.car-title {
+  font-weight: 700;
 }
 
 /*  */
-/* Handle Desktop Screen Size*/
+/* Handle Responsive Desktop Screen Size*/
 @media (min-width: 992px) {
   body {
     padding-block-start: 70px;
@@ -376,7 +392,7 @@ input.nosubmit {
   }
 
   form.nosubmit {
-    /* height: 48px; */
+    height: 40px;
     width: 80%;
   }
 
@@ -416,6 +432,7 @@ input.nosubmit {
     color: var(--text-color);
     background-color: white;
     border: 1px solid #ccc;
+    box-shadow: none;
   }
 
   /* Car List Section  */
@@ -423,8 +440,13 @@ input.nosubmit {
   .car-section {
     display: block;
     min-width: 90%;
+    margin-top: var(--section-spacing-desktop);
   }
   .car-section .container {
     padding-inline: var(--desktop-padding);
+  }
+
+  .car-title {
+    font-size: var(--fs-7);
   }
 }
