@@ -3,7 +3,8 @@
   --main-color: #246af2;
   --text-color: #020102;
   --text-grey-color: #333333;
-  --text-price-color: #d90429;
+  --text-grey-light-color: #707070;
+  --text-price-color: #e9280d;
   --bg-grey-color: #f6f6f6;
   --bg-color: #fff;
   --bg-dark-color: #2b3342;
@@ -12,6 +13,7 @@
 
   /* Typography */
   --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Verdana", sans-serif;
   --fs-1: 3rem;
   --fs-2: 2.6rem;
   --fs-3: 2.2rem;
@@ -327,7 +329,7 @@ input.nosubmit {
 }
 
 .cars-container .box {
-  width: 343px;
+  width: 403px;
   object-fit: contain;
   border-radius: var(--section-radius);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -340,13 +342,47 @@ input.nosubmit {
   object-position: center;
 }
 
-.car-descrip {
+.car-description {
   position: relative;
   width: 100%;
   display: block;
   margin-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.4rem;
   padding-inline: 1rem;
+}
+
+.car-description .title {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.car-description .year {
+  font-size: var(--fs-10);
+  font-weight: 400;
+  color: var(--text-grey-light-color);
+}
+
+.car-description .mileage {
+  font-size: var(--fs-10);
+  font-weight: 400;
+  margin-top: 0.3rem;
+  color: var(--text-grey-light-color);
+}
+
+.car-description .price {
+  /* font-family: var(--font-secondary); */
+  margin-top: 1.4rem;
+  color: var(--text-price-color);
+  font-weight: 700;
+  font-size: var(--fs-8);
+}
+
+.car-description .price-monthly {
+  /* font-family: var(--font-secondary); */
+  margin-top: 0.4rem;
+  font-weight: 400;
+  font-size: var(--fs-11);
+  color: var(--text-grey-light-color);
 }
 
 .details-button {
@@ -354,7 +390,7 @@ input.nosubmit {
   right: 0;
   bottom: 0;
   background-color: var(--main-color);
-  font-size: var(--fs-10);
+  font-size: var(--fs-9);
   font-weight: 500;
   color: white;
   height: 3rem;
