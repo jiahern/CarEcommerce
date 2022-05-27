@@ -178,6 +178,7 @@ button .nav-open-btn {
   position: absolute;
   left: 4rem;
   font-weight: 500;
+  color: var(--text-color);
 }
 .nav-action-btn {
   display: flex;
