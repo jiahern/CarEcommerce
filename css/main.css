@@ -394,8 +394,8 @@ input.nosubmit {
   font-size: var(--fs-9);
   font-weight: 500;
   color: white;
-  height: 3rem;
-  width: 10rem;
+  height: 3.5rem;
+  width: 11rem;
   border-radius: 10px 0px 10px 0px;
   text-decoration: none;
 }
