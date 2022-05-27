@@ -189,7 +189,7 @@ button .nav-open-btn {
 }
 
 .nav-action-btn i {
-  color: var(--main-color);
+  /* color: var(--main-color); */
   font-size: var(--fs-7);
 }
 
