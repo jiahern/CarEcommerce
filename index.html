@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the telephone styling of dark blue -->
+    <meta name="format-detection" content="telephone=no" />
+
     <title>95 Auto Group</title>
     <link
       rel="icon"
@@ -90,7 +94,6 @@
             <li class="navbar-item">
               <button class="nav-action-btn">
                 <i class="fa fa-home navbar-item-icon" aria-hidden="true"></i>
-
                 <span href="#home" class="navbar-link">Home</span>
               </button>
             </li>
@@ -115,7 +118,7 @@
             <li class="navbar-item">
               <button class="nav-action-btn">
                 <i class="fa fa-car navbar-item-icon" aria-hidden="true"></i>
-                <span href="#gallery" class="navbar-link">Gallery</span>
+                <span href="#car-list" class="navbar-link">Gallery</span>
               </button>
             </li>
             <li class="navbar-item">
@@ -186,7 +189,7 @@
     </div>
 
     <section class="car-section">
-      <div class="container">
+      <section class="container">
         <div class="car-title">Available Cars:</div>
         <div class="cars-container">
           <!-- Singe Item Car -->
@@ -206,7 +209,21 @@
           <!-- Singe Item Car -->
           <div class="box">
             <div class="car-image">
-              <img src="/content/pic/car-1.png" alt="" />
+              <img src="/content/pic/car-2.png" alt="" />
+            </div>
+            <div class="car-description">
+              <div class="title">2017 BMW X5 XDRIVE40E (CKD) 2.0s</div>
+              <div class="year">Year: 2017</div>
+              <div class="mileage">Mileage: 180,000 km</div>
+              <div class="price">RM 175,500</div>
+              <div class="price-monthly">RM 1,925/month</div>
+              <button href="#" class="details-button">Details</button>
+            </div>
+          </div>
+          <!-- Singe Item Car -->
+          <div class="box">
+            <div class="car-image">
+              <img src="/content/pic/car-2.png" alt="" />
             </div>
             <div class="car-description">
               <div class="title">2017 BMW X5 XDRIVE40E (CKD) 2.0s</div>
@@ -262,7 +279,7 @@
           <!-- Singe Item Car -->
           <div class="box">
             <div class="car-image">
-              <img src="/content/pic/car-1.png" alt="" />
+              <img src="/content/pic/car-2.png" alt="" />
             </div>
             <div class="car-description">
               <div class="title">2017 BMW X5 XDRIVE40E (CKD) 2.0s</div>
@@ -290,21 +307,7 @@
           <!-- Singe Item Car -->
           <div class="box">
             <div class="car-image">
-              <img src="/content/pic/car-1.png" alt="" />
-            </div>
-            <div class="car-description">
-              <div class="title">2017 BMW X5 XDRIVE40E (CKD) 2.0s</div>
-              <div class="year">Year: 2017</div>
-              <div class="mileage">Mileage: 180,000 km</div>
-              <div class="price">RM 175,500</div>
-              <div class="price-monthly">RM 1,925/month</div>
-              <button href="#" class="details-button">Details</button>
-            </div>
-          </div>
-          <!-- Singe Item Car -->
-          <div class="box">
-            <div class="car-image">
-              <img src="/content/pic/car-1.png" alt="" />
+              <img src="/content/pic/car-2.png" alt="" />
             </div>
             <div class="car-description">
               <div class="title">2017 BMW X5 XDRIVE40E (CKD) 2.0s</div>
@@ -358,8 +361,43 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
+
+    <!-- Footer Section  -->
+    <footer>
+      <div class="container">
+        <div class="footer-element">
+          <div class="title">Quick Link</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Car Comparison</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#car-list">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-element">
+          <div class="title">Contact Info:</div>
+          <div>Address:</div>
+          <div class="address">
+            LG-31a & LG-32, LG Floor, Viva Shopping Mall, No 85, Jalan Loke Yew,
+            55200 Kuala Lumpur
+          </div>
+          <div>Email: sales@95autogroup.my</div>
+          <div>Phone: +603 - 9770 8166</div>
+          <div>WhatsApp : +6014 9333 976</div>
+          <div>Operation hour :</div>
+          <div>Mon - Sun 10am - 10pm</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright  -->
+    <div class="copyright">
+      <p>&#169; 95 Auto Group All Right Reserved</p>
+    </div>
     <!-- Custom Javascript -->
     <script src="/script.js"></script>
   </body>
