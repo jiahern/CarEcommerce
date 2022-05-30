@@ -180,6 +180,10 @@ button .nav-open-btn {
   font-weight: 500;
   color: var(--text-color) !important;
 }
+
+.navbar-link:hover {
+  color: var(--main-color) !important;
+}
 .nav-action-btn {
   display: flex;
   align-items: center;
@@ -265,7 +269,7 @@ input.nosubmit {
   border-radius: var(--button-radius);
   width: 60%;
   padding: 11px 4px 11px 40px;
-  background: transparent url(/styles/search.svg) no-repeat 13px center;
+  background: transparent url(/images/search.svg) no-repeat 13px center;
 }
 
 .submit {
@@ -276,6 +280,11 @@ input.nosubmit {
   padding: 0.75em 2em;
   border-radius: var(--button-radius);
   text-decoration: none;
+  transition: all 0.7s ease;
+}
+
+.submit:is(:hover, :active) {
+  border-radius: 30px;
 }
 
 /*  */
@@ -310,6 +319,12 @@ input.nosubmit {
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: var(--transition-1);
+}
+
+.filter-button:is(:active) {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.18) 0px 2px 4px -1px;
 }
 
 /*  */
@@ -334,6 +349,12 @@ input.nosubmit {
   object-fit: contain;
   border-radius: var(--section-radius);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: box-shadow 0.3s;
+}
+
+.cars-container .box:is(:hover, :active) {
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+  cursor: pointer;
 }
 
 .car-image img {
@@ -400,14 +421,14 @@ input.nosubmit {
   text-decoration: none;
 }
 
-footer {
+.footer-subA {
   background-color: var(--main-color);
   color: white;
   padding: 2rem 0 5rem 0;
   margin-top: 5rem;
 }
 
-footer .container {
+.footer-subA .container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -560,6 +581,11 @@ footer .container {
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: none;
+    transition: all 0.3s ease;
+  }
+
+  .filter-button:is(:hover, :active) {
+    border: 1px solid var(--main-color);
   }
 
   /* Car List Section  */
@@ -577,7 +603,7 @@ footer .container {
     font-size: var(--fs-7);
   }
 
-  footer .container {
+  .footer-subA .container {
     flex-direction: row;
     padding-inline: 8%;
     gap: 10rem;
