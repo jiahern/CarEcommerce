@@ -376,6 +376,7 @@ input.nosubmit {
 .car-description .title {
   margin-bottom: 0.3rem;
   font-weight: 500;
+  color: var(--text-color);
 }
 
 .car-description .year {

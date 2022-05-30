@@ -7,7 +7,6 @@ const navBar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
 const navElements = [overlay, navOpenButton, navCloseBtn];
 
-console.log(navOpenButton);
 for (let i = 0; i < navElements.length; i++) {
   navElements[i].addEventListener("click", function () {
     navBar.classList.toggle("active");

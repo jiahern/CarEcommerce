@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the telephone styling of dark blue -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>95 Auto Group</title>
+
+    <link rel="icon" href="/images/logo-yellow.png" type="image/icon type" />
+
+    <!-- Jqeury Import  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Font Awesome Import  -->
+    <script
+      src="https://kit.fontawesome.com/7146d6339d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Icon Import -->
+    <link
+      rel="stylesheet"
+      href="/styles/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!-- css.gg -->
+    <link href="https://css.gg/css" rel="stylesheet" />
+
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/product-page.css" />
+
+    <!-- Google font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <div>
+          <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="#020102"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Logo Icon -->
+        <a href="#" class="logo top">
+          <img src="/images/logo.png" alt="95 Auto Group Logo" />
+        </a>
+
+        <!-- Navbar -->
+        <nav class="navbar" data-navbar>
+          <div class="nav-title">
+            <button
+              class="nav-close-btn"
+              data-nav-close-btn
+              aria-label="Close Menu"
+            >
+              <!-- <i class="gg-close"></i> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="#020102"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+            <a href="#" class="logo">
+              <img src="/images/logo.png" alt="95 Auto Group Logo" />
+            </a>
+            <span class="nav-title-logo">95 Auto Group</span>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/index.html">
+                <button class="nav-action-btn">
+                  <i class="fa fa-home navbar-item-icon" aria-hidden="true"></i>
+                  <span href="#home" class="navbar-link">Home</span>
+                </button>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="/car-comparison.html">
+                <button class="nav-action-btn">
+                  <i
+                    class="fa fa-exchange navbar-item-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span href="#cars" class="navbar-link">Car Comparison</span>
+                </button>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-action-btn">
+                <i
+                  class="fa fa-id-card-o navbar-item-icon"
+                  aria-hidden="true"
+                ></i>
+                <span href="#about" class="navbar-link">About</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-action-btn">
+                <i class="fa fa-car navbar-item-icon" aria-hidden="true"></i>
+                <span href="#car-list" class="navbar-link">Gallery</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-action-btn">
+                <i class="fa fa-phone navbar-item-icon" aria-hidden="true"></i>
+                <span href="#contactus" class="navbar-link">Contact Us</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Section  -->
+    <section class="product-section">
+      <div class="product-container-top">
+        <!-- Product Image  -->
+        <div class="product-image-section">
+          <div class="product-image-view">
+            <!-- Full-width images with number text -->
+            <div class="slidesImage" data-slides-image>
+              <div class="imageNumber">1 / 5</div>
+              <img src="images/product-a/product-a-0.png" alt="product-a" />
+            </div>
+
+            <div class="slidesImage" data-slides-image>
+              <div class="imageNumber">2 / 5</div>
+              <img src="images/product-a/product-a-1.webp" alt="product-a" />
+            </div>
+
+            <div class="slidesImage" data-slides-image>
+              <div class="imageNumber">3 / 5</div>
+              <img src="images/product-a/product-a-2.webp" alt="product-a" />
+            </div>
+
+            <div class="slidesImage" data-slides-image>
+              <div class="imageNumber">4 / 5</div>
+              <img src="images/product-a/product-a-3.webp" alt="product-a" />
+            </div>
+
+            <div class="slidesImage" data-slides-image>
+              <div class="imageNumber">5 / 5</div>
+              <img src="images/product-a/product-a-4.webp" alt="product-a" />
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="previousBtn" onclick="controlSlides(-1)"
+              ><i class="fa-solid fa-circle-chevron-left"></i
+            ></a>
+            <a class="nextBtn" onclick="controlSlides(+1)"
+              ><i class="fa-solid fa-circle-chevron-right"></i
+            ></a>
+          </div>
+          <div class="product-image-gallery">
+            <div class="image-container">
+              <img
+                class="thumbnailImage cursor"
+                data-thumbnail-Image
+                src="images/product-a/product-a-0.png"
+                onclick="currentSlide(1)"
+                alt="product a"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                class="thumbnailImage cursor"
+                data-thumbnail-Image
+                src="images/product-a/product-a-1.webp"
+                onclick="currentSlide(2)"
+                alt="product a"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                class="thumbnailImage cursor"
+                data-thumbnail-Image
+                src="images/product-a/product-a-2.webp"
+                onclick="currentSlide(3)"
+                alt="product a"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                class="thumbnailImage cursor"
+                data-thumbnail-Image
+                src="images/product-a/product-a-3.webp"
+                onclick="currentSlide(4)"
+                alt="product a"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                class="thumbnailImage cursor"
+                data-thumbnail-Image
+                src="images/product-a/product-a-4.webp"
+                onclick="currentSlide(5)"
+                alt="product a"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Description  -->
+        <div class="product-description">
+          <div class="product-description-sub-a">
+            <div class="title">2018 BMW X7 XDRIVE60E (CKD) 2.2s</div>
+            <div class="price">RM 203,100</div>
+            <div class="price-monthly">RM 2,225/month</div>
+          </div>
+          <div class="product-description-sub-b">
+            <ul>
+              <li class="descrip-benefit">
+                <div>
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>All inclusive Price</div>
+              </li>
+              <li class="descrip-benefit">
+                <div>
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>Road Tax</div>
+              </li>
+              <li class="descrip-benefit">
+                <div>
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>1-Year Warranty</div>
+              </li>
+              <li class="descrip-benefit">
+                <div>
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>Ownership Transfer Fee</div>
+              </li>
+              <li class="descrip-benefit">
+                <div>
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>Loan Processing Fee</div>
+              </li>
+            </ul>
+          </div>
+          <button class="enquiry-button-desktop">ENQUIRY</button>
+        </div>
+      </div>
+
+      <div class="product-container-bottom">
+        <div class="car-title">Car Details</div>
+        <div class="product-details">
+          <ul>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Brand</div>
+              </div>
+              <div class="product-details-right">BMW</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Model</div>
+              </div>
+              <div class="product-details-right">323I</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Type</div>
+              </div>
+              <div class="product-details-right">SUV</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Condition</div>
+              </div>
+              <div class="product-details-right">USED</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Plate Number</div>
+              </div>
+              <div class="product-details-right">WUE8226</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Transmission (AT/MT)</div>
+              </div>
+              <div class="product-details-right">AT</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Engine Capacity</div>
+              </div>
+              <div class="product-details-right">2.0</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Car Colour</div>
+              </div>
+              <div class="product-details-right">White</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Number of Seats</div>
+              </div>
+              <div class="product-details-right">5</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Mileage</div>
+              </div>
+              <div class="product-details-right">180,000 KM</div>
+            </li>
+            <li class="product-details-single-line">
+              <div class="product-details-left-box">
+                <div class="product-details-left">Manufacture Year</div>
+              </div>
+              <div class="product-details-right">2018</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="enquiry-button-mobile-wrapper">
+      <button class="enquiry-button-mobile">ENQUIRY</button>
+    </div>
+
+    <!-- Footer Section  -->
+    <footer>
+      <div class="footer-subA">
+        <div class="container">
+          <div class="footer-element">
+            <div class="title">Quick Link</div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Car Comparison</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#car-list">Gallery</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-element">
+            <div class="title">Contact Info:</div>
+            <div>Address:</div>
+            <div class="address">
+              LG-31a & LG-32, LG Floor, Viva Shopping Mall, No 85, Jalan Loke
+              Yew, 55200 Kuala Lumpur
+            </div>
+            <div>Email: sales@95autogroup.my</div>
+            <div>Phone: +603 - 9770 8166</div>
+            <div>WhatsApp : +6014 9333 976</div>
+            <div>Operation hour :</div>
+            <div>Mon - Sun 10am - 10pm</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright  -->
+      <div class="copyright">
+        <p>&#169; 95 Auto Group All Right Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Custom Javascript -->
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/product-page.js"></script>
+  </body>
+</html>
