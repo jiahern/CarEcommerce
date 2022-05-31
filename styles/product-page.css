@@ -166,9 +166,12 @@
   height: 70%;
   width: inherit;
   border-radius: var(--section-radius);
-
   text-align: center;
-  transition: all 0.7s ease;
+  transition: background-color var(--transition-1);
+}
+
+.enquiry-button-mobile:active {
+  background-color: var(--bg-dark-color);
 }
 
 .enquiry-button-desktop {
@@ -226,10 +229,22 @@
     max-width: 50%;
   }
 
+  .imageNumber {
+    font-size: var(--fs-8);
+    left: 6%;
+    top: 9%;
+  }
+
+  /* Next & previous buttons */
+  .previousBtn,
+  .nextBtn {
+    font-size: 40px;
+  }
+
   /* Enlarge Button when hover  */
   .previousBtn:is(:hover),
   .nextBtn:is(:hover) {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .product-image-gallery {
@@ -315,6 +330,12 @@
     text-decoration: none;
     margin-top: var(--section-spacing-desktop);
     border-radius: var(--button-radius);
+    transition: background-color var(--transition-1);
+    text-align: center;
+  }
+
+  .enquiry-button-desktop:hover {
+    background-color: var(--bg-dark-color);
   }
 
   .product-container-bottom {

@@ -176,7 +176,7 @@ button .nav-open-btn {
 .navbar-link {
   font-size: var(--fs-9);
   position: absolute;
-  left: 4rem;
+  left: 3.6rem;
   font-weight: 500;
   color: var(--text-color) !important;
 }
