@@ -246,16 +246,16 @@
     margin-top: var(--section-spacing-mobile);
   }
   .product-description-sub-a .title {
-    font-size: var(--fs-4);
+    font-size: var(--fs-5);
     font-weight: 700;
   }
 
   .product-description-sub-a .price {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
   }
 
   .product-description-sub-a .price-monthly {
-    font-size: var(--fs-8);
+    font-size: var(--fs-9);
   }
 
   .product-description-sub-b {
