@@ -32,6 +32,7 @@
     <!-- Default CSS -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/product-page.css" />
+    <link rel="stylesheet" href="styles/enquiry-page.css" />
 
     <!-- Google font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,6 +64,10 @@
             </svg>
           </button>
         </div>
+        <a href="/product-page-a.html" class="back-button">
+          <div><i class="fa-solid fa-chevron-left"></i></div>
+        </a>
+        <div class="section-title">Enquiry Page</div>
         <!-- Logo Icon -->
         <a href="/index.html" class="logo top">
           <img src="/images/logo.png" alt="95 Auto Group Logo" />
@@ -143,222 +148,119 @@
     </header>
 
     <!-- Main Section  -->
-    <section class="product-section">
-      <div class="product-container-top">
+    <div class="enquiry-title">Enquiry Page</div>
+    <section class="product-section enquiry">
+      <div class="product-container-top enquiry">
         <!-- Product Image  -->
-        <div class="product-image-section">
-          <div class="product-image-view">
-            <!-- Full-width images with number text -->
-            <div class="slidesImage" data-slides-image>
-              <div class="imageNumber">1 / 5</div>
-              <img src="images/product-a/product-a-0.png" alt="product-a" />
-            </div>
-
-            <div class="slidesImage" data-slides-image>
-              <div class="imageNumber">2 / 5</div>
-              <img src="images/product-a/product-a-1.webp" alt="product-a" />
-            </div>
-
-            <div class="slidesImage" data-slides-image>
-              <div class="imageNumber">3 / 5</div>
-              <img src="images/product-a/product-a-2.webp" alt="product-a" />
-            </div>
-
-            <div class="slidesImage" data-slides-image>
-              <div class="imageNumber">4 / 5</div>
-              <img src="images/product-a/product-a-3.webp" alt="product-a" />
-            </div>
-
-            <div class="slidesImage" data-slides-image>
-              <div class="imageNumber">5 / 5</div>
-              <img src="images/product-a/product-a-4.webp" alt="product-a" />
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="previousBtn" onclick="controlSlides(-1)"
-              ><i class="fa-solid fa-circle-chevron-left"></i
-            ></a>
-            <a class="nextBtn" onclick="controlSlides(+1)"
-              ><i class="fa-solid fa-circle-chevron-right"></i
-            ></a>
-          </div>
-          <div class="product-image-gallery">
-            <div class="image-container">
-              <img
-                class="thumbnailImage cursor"
-                data-thumbnail-Image
-                src="images/product-a/product-a-0.png"
-                onclick="currentSlide(1)"
-                alt="product a"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                class="thumbnailImage cursor"
-                data-thumbnail-Image
-                src="images/product-a/product-a-1.webp"
-                onclick="currentSlide(2)"
-                alt="product a"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                class="thumbnailImage cursor"
-                data-thumbnail-Image
-                src="images/product-a/product-a-2.webp"
-                onclick="currentSlide(3)"
-                alt="product a"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                class="thumbnailImage cursor"
-                data-thumbnail-Image
-                src="images/product-a/product-a-3.webp"
-                onclick="currentSlide(4)"
-                alt="product a"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                class="thumbnailImage cursor"
-                data-thumbnail-Image
-                src="images/product-a/product-a-4.webp"
-                onclick="currentSlide(5)"
-                alt="product a"
-              />
-            </div>
-          </div>
+        <div class="product-image-section enquiry">
+          <img src="images/product-a/product-a-0.png" alt="product-a" />
         </div>
 
         <!-- Product Description  -->
-        <div class="product-description">
-          <div class="product-description-sub-a">
+        <div class="product-description enquiry">
+          <div class="product-description-sub-a enquiry">
             <div class="title">2018 BMW X7 XDRIVE60E (CKD) 2.2s</div>
             <div class="price">RM 203,100</div>
-            <div class="price-monthly">RM 2,225/month</div>
+            <div class="wrap">
+              <div class="wrap-row">
+                <div class="left-title">Deposit Fees</div>
+                <div class="right-value">RM 20,310</div>
+              </div>
+              <div class="wrap-row">
+                <div class="left-title">Balance</div>
+                <div class="right-value">RM 182,790</div>
+              </div>
+            </div>
           </div>
-          <div class="product-description-sub-b">
-            <ul>
-              <li class="descrip-benefit">
-                <div>
-                  <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <div>All inclusive Price</div>
-              </li>
-              <li class="descrip-benefit">
-                <div>
-                  <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <div>Road Tax</div>
-              </li>
-              <li class="descrip-benefit">
-                <div>
-                  <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <div>1-Year Warranty</div>
-              </li>
-              <li class="descrip-benefit">
-                <div>
-                  <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <div>Ownership Transfer Fee</div>
-              </li>
-              <li class="descrip-benefit">
-                <div>
-                  <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <div>Loan Processing Fee</div>
-              </li>
-            </ul>
-          </div>
-          <a href="/enquiry-page-a.html" class="enquiry-button-desktop">
-            ENQUIRY
-          </a>
         </div>
       </div>
-
-      <div class="product-container-bottom">
-        <div class="car-title">Car Details</div>
-        <div class="product-details">
+      <div class="wrapper">
+        <!-- Product Description  -->
+        <div class="product-description enquiry desktop">
+          <div class="product-description-sub-a enquiry">
+            <div class="title">2018 BMW X7 XDRIVE60E (CKD) 2.2s</div>
+            <div class="price">RM 203,100</div>
+            <div class="wrap">
+              <div class="wrap-row">
+                <div class="left-title">Deposit Fees</div>
+                <div class="right-value">RM 20,310</div>
+              </div>
+              <div class="wrap-row">
+                <div class="left-title">Balance</div>
+                <div class="right-value">RM 182,790</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-description-sub-b enquiry">
           <ul>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Brand</div>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
               </div>
-              <div class="product-details-right">BMW</div>
+              <div>All inclusive Price</div>
             </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Model</div>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
               </div>
-              <div class="product-details-right">323I</div>
+              <div>Road Tax</div>
             </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Type</div>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
               </div>
-              <div class="product-details-right">SUV</div>
+              <div>1-Year Warranty</div>
             </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Condition</div>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
               </div>
-              <div class="product-details-right">USED</div>
+              <div>Ownership Transfer Fee</div>
             </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Plate Number</div>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
               </div>
-              <div class="product-details-right">WUE8226</div>
-            </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left transmission">
-                  Transmission
-                </div>
-              </div>
-              <div class="product-details-right">AT</div>
-            </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Engine Capacity</div>
-              </div>
-              <div class="product-details-right">2.0</div>
-            </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Car Colour</div>
-              </div>
-              <div class="product-details-right">White</div>
-            </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Number of Seats</div>
-              </div>
-              <div class="product-details-right">5</div>
-            </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left">Mileage</div>
-              </div>
-              <div class="product-details-right">180,000 KM</div>
-            </li>
-            <li class="product-details-single-line">
-              <div class="product-details-left-box">
-                <div class="product-details-left manufacture">
-                  <span>Manuf. Year</span>
-                </div>
-              </div>
-              <div class="product-details-right">2018</div>
+              <div>Loan Processing Fee</div>
             </li>
           </ul>
         </div>
       </div>
+      <section class="enquiry-form">
+        <div class="car-title">Enquiry Form</div>
+
+        <form class="" action="/action_page.php">
+          <div class="form">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Fill in your name" required />
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Fill in your email" required />
+            <label for="phone"><b>Phone Number</b></label>
+            <input
+              type="number"
+              placeholder="Fill in your phone number"
+              required
+            />
+            <label for="message"><b>Message</b></label>
+            <input
+              type="text"
+              placeholder="Please drop any message here"
+              required
+            />
+          </div>
+
+          <div class="enquiry-button-mobile-wrapper">
+            <button type="submit" class="enquiry-button-mobile">SUBMIT</button>
+          </div>
+
+          <button type="submit" class="enquiry-button-desktop enquiry">
+            SUBMIT
+          </button>
+        </form>
+      </section>
     </section>
-    <div class="enquiry-button-mobile-wrapper">
-      <a href="/enquiry-page-a.html" class="enquiry-button-mobile"> ENQUIRY </a>
-    </div>
 
     <!-- Footer Section  -->
     <footer>

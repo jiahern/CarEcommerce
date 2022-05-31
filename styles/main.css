@@ -25,6 +25,7 @@
   --fs-9: 1rem;
   --fs-10: 0.8rem;
   --fs-11: 0.6rem;
+  --fs-12: 0.5rem;
 
   --fw-300: 300;
   --fw-500: 500;
@@ -334,6 +335,7 @@ input.nosubmit {
 }
 .car-title {
   font-weight: 700;
+  font-size: var(--fs-8);
 }
 
 .cars-container {

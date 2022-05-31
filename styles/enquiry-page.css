@@ -1,0 +1,209 @@
+@import url(/styles/main.css);
+
+/* Header Section  */
+.back-button {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+  z-index: 1;
+}
+
+.section-title {
+  position: absolute;
+  padding-inline-end: 3rem;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: var(--fs-8);
+  font-weight: 700;
+}
+
+/* Product Section  */
+
+.product-section.enquiry {
+  padding-inline: var(--mobile-padding);
+}
+
+.product-container-top.enquiry {
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.product-image-section.enquiry {
+  width: 40%;
+}
+
+.product-description.enquiry.desktop {
+  display: none;
+}
+
+.product-description.enquiry {
+  margin-top: 0;
+  padding-inline: 0;
+  padding-inline-start: 0.5rem;
+  width: 60%;
+}
+
+.product-description-sub-a.enquiry .title {
+  font-size: var(--fs-9);
+}
+
+.product-description-sub-a.enquiry .price {
+  margin-top: 0.5rem;
+  font-size: var(--fs-10);
+  font-weight: 700;
+}
+
+.wrap {
+  margin-top: 0.5rem;
+}
+.wrap-row {
+  display: flex;
+  font-size: var(--fs-10);
+  margin-top: 0.5rem;
+}
+
+.left-title {
+  width: 60%;
+  font-size: var(--fs-11);
+}
+
+.right-value {
+  width: 40%;
+  color: var(--text-price-color);
+  font-weight: 700;
+}
+
+.product-description-sub-b.enquiry {
+  margin-top: 0;
+  background-color: var(--bg-grey-color);
+  padding: 1rem;
+  font-size: var(--fs-10);
+}
+
+/* Form Section  */
+.enquiry-form {
+  margin-top: var(--section-spacing-mobile);
+}
+.form {
+  margin-top: 1rem;
+}
+.form > label {
+  display: block;
+  padding: 0.5rem 0 0.5rem 0;
+  font-weight: 500;
+}
+.form > input {
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  border-radius: var(--section-radius);
+  margin-bottom: 0.8rem;
+  font-size: var(--fs-10);
+}
+
+@media (max-width: 992px) {
+  .enquiry-title {
+    display: none;
+  }
+
+  .nav-open-btn {
+    display: none;
+  }
+  .logo.top {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Header Section  */
+  .back-button {
+    display: none;
+  }
+  .section-title {
+    display: none;
+  }
+
+  /* Product Section  */
+
+  .enquiry-title {
+    display: block;
+    padding-inline-start: var(--product-desktop-padding);
+    margin-top: var(--section-spacing-mobile);
+    font-size: var(--fs-5);
+    font-weight: 700;
+  }
+  .product-section.enquiry {
+    display: flex;
+    align-items: flex-start;
+    margin-top: var(--section-spacing-mobile);
+    padding-inline: var(--product-desktop-padding);
+  }
+
+  /* Reset these selected section css  */
+  .product-container-top.enquiry,
+  .product-image-section.enquiry {
+    all: unset;
+  }
+
+  .product-description.enquiry.desktop {
+    padding-left: 0;
+    display: block;
+    width: 100%;
+  }
+  .product-description.enquiry {
+    display: none;
+  }
+
+  .product-description-sub-a {
+    margin-top: 0px;
+    margin-bottom: 2rem;
+  }
+
+  /* Form Section  */
+  .enquiry-form {
+    margin-top: 0;
+  }
+
+  /* Divide the Section  */
+  .product-container-top.enquiry {
+    width: 25%;
+  }
+
+  .wrapper {
+    width: 35%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .wrap {
+    padding: 1rem;
+    background-color: var(--bg-grey-color);
+  }
+  .enquiry-form {
+    width: 40%;
+    border-left: 1px solid var(--border-color);
+    padding-left: 1.5rem;
+  }
+
+  /* Reset the Font size  */
+  .product-description-sub-a.enquiry .title {
+    font-size: var(--fs-7);
+  }
+
+  .product-description-sub-a.enquiry .price {
+    font-size: var(--fs-7);
+  }
+
+  .left-title {
+    font-size: var(--fs-9);
+  }
+
+  .right-value {
+    font-size: var(--fs-8);
+  }
+
+  .descrip-benefit {
+    font-size: var(--fs-9);
+  }
+}
