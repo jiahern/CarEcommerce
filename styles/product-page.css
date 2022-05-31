@@ -39,6 +39,8 @@
   color: var(--main-color);
   font-size: 24px;
   transition: font-size var(--transition-1);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Next button to right  */
@@ -46,10 +48,13 @@
   right: 0;
 }
 
-/* Enlarge Button when hover  */
-.previousBtn:hover,
-.nextBtn:hover {
+.previousBtn:active,
+.nextBtn:active {
   font-size: 30px;
+}
+.previousBtn::after,
+.nextBtn::after {
+  clear: both;
 }
 
 /* Image number indicator */
@@ -69,11 +74,18 @@
   margin-top: 1rem;
 }
 
-/* Add a transparency effect for thumnbail images */
+.image-container {
+  border-radius: var(--section-radius);
+}
+
+/* Add a transparency blurry effect for thumnbail images */
 .thumbnailImage {
+  width: 100%;
   border-radius: var(--section-radius);
   opacity: 0.6;
-  border: 1px solid var(--main-color);
+  border: 4px solid var(--main-color);
+  object-fit: cover;
+  object-position: center;
 }
 
 .active,
@@ -116,12 +128,15 @@
 
 /*  */
 /* Product Description Section Sub B */
+
+.product-description-sub-b {
+  margin-top: 1.3rem;
+}
 .descrip-benefit {
   /* padding-inline: 1rem; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 1.3rem;
   margin-bottom: 1rem;
   gap: 1rem;
 }
@@ -138,7 +153,8 @@
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 76px;
+  height: 72px;
+  padding-inline: var(--mobile-padding);
 }
 
 .enquiry-button-mobile {
@@ -152,7 +168,8 @@
   color: white;
   text-decoration: none;
   height: 70%;
-  width: 90%;
+  width: inherit;
+  border-radius: var(--section-radius);
 
   text-align: center;
   transition: all 0.7s ease;
@@ -176,18 +193,20 @@
   align-items: center;
 }
 .product-details-left-box {
-  width: 35%;
+  width: 45%;
 }
 
 .product-details-left {
   margin-left: 2rem;
   padding: 1rem 0 1rem;
+  font-size: var(--fs-10);
+  font-weight: 500;
 }
 
 .product-details-right {
-  margin-left: 2rem;
-  width: 65%;
+  margin-left: 1rem;
   padding: 1rem 0 1rem;
+  font-size: var(--fs-10);
 }
 
 .product-container-bottom {
@@ -211,8 +230,75 @@
     max-width: 50%;
   }
 
+  /* Enlarge Button when hover  */
+  .previousBtn:is(:hover),
+  .nextBtn:is(:hover) {
+    font-size: 30px;
+  }
+
   .product-image-gallery {
     display: flex;
+  }
+  /*  */
+  /* Product Description  */
+
+  .product-description {
+    padding-inline-start: 3rem;
+  }
+  .product-description-sub-a {
+    margin-top: var(--section-spacing-mobile);
+  }
+  .product-description-sub-a .title {
+    font-size: var(--fs-5);
+    font-weight: 700;
+  }
+
+  .product-description-sub-a .price {
+    font-size: var(--fs-6);
+  }
+
+  .product-description-sub-a .price-monthly {
+    font-size: var(--fs-8);
+  }
+
+  .product-description-sub-b {
+    background-color: var(--bg-grey-color);
+    padding: var(--mobile-padding);
+  }
+
+  /* Description Benefit  */
+  .descrip-benefit {
+    font-size: var(--fs-8);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Product Details  */
+  .product-details-left-box {
+    width: 35%;
+  }
+  .product-details-left {
+    width: 100%;
+    font-size: var(--fs-9);
+    font-weight: 500;
+  }
+
+  /* Add (AT/MT) Text into the transmission data  */
+  .product-details-left.transmission::after {
+    content: " (AT/MT)";
+  }
+
+  .product-details-left.manufacture span {
+    display: none;
+  }
+
+  /* Change to full text for manufacture year  */
+  .product-details-left.manufacture::after {
+    content: "Manufacture Year";
+  }
+  .product-details-right {
+    margin-left: 2rem;
+    font-size: var(--fs-9);
+    font-weight: 500;
   }
 
   /* Enquiry Button  */
@@ -225,11 +311,13 @@
     display: block;
     width: 100%;
     background-color: var(--main-color);
-    font-size: var(--fs-11);
+    font-size: var(--fs-7);
     font-weight: 500;
     color: white;
-    padding: 2em;
+    padding: 1.5rem 0 1.5rem 0;
     text-decoration: none;
+    margin-top: var(--section-spacing-desktop);
+    border-radius: var(--button-radius);
   }
 
   .product-container-bottom {
@@ -241,9 +329,5 @@
     font-weight: 500;
     color: white;
     border-radius: var(--section-radius) 0 0 var(--section-radius);
-  }
-
-  .product-details-right {
-    font-weight: 500;
   }
 }
