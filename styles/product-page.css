@@ -74,14 +74,10 @@
   margin-top: 1rem;
 }
 
-.image-container {
-  border-radius: var(--section-radius);
-}
-
 /* Add a transparency blurry effect for thumnbail images */
 .thumbnailImage {
   width: 100%;
-  border-radius: var(--section-radius);
+  border-radius: var(--button-radius);
   opacity: 0.6;
   border: 4px solid var(--main-color);
   object-fit: cover;
@@ -243,18 +239,19 @@
   /* Product Description  */
 
   .product-description {
+    padding-inline: 0;
     padding-inline-start: 3rem;
   }
   .product-description-sub-a {
     margin-top: var(--section-spacing-mobile);
   }
   .product-description-sub-a .title {
-    font-size: var(--fs-5);
+    font-size: var(--fs-4);
     font-weight: 700;
   }
 
   .product-description-sub-a .price {
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
   }
 
   .product-description-sub-a .price-monthly {
