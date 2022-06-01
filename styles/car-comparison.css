@@ -38,12 +38,6 @@
   background-color: white;
 }
 
-.product-image {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-}
-
 .product-image img {
   object-fit: cover;
   height: 65px;
@@ -68,13 +62,13 @@
 }
 
 .right-elements-image {
-  width: 7rem;
+  width: 7.5rem;
   border-top: 0.5px solid var(--border-color);
   border-right: 0.5px solid var(--border-color);
   border-bottom: 0.5px solid var(--border-color);
 }
 .right-elements {
-  width: 7rem;
+  width: 7.5rem;
   padding: 1.2rem;
   border-top: 0.5px solid var(--border-color);
   border-right: 0.5px solid var(--border-color);
@@ -89,4 +83,17 @@
 
 .box-btm-element {
   font-size: var(--fs-11);
+}
+
+/* Car A  Manipulate with JS*/
+.product-image {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.product {
+  display: none;
+}
+.product-data {
+  display: none;
 }

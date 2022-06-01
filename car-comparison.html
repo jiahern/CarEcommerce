@@ -179,56 +179,76 @@
         </div>
         <div class="d-flex col">
           <div class="d-flex col flex-start right-elements-image image-box">
-            <div id="product-a-list-image" class="product-image">
-              <img src="/images/product-a/product-a-0.png" alt="product-a" />
+            <!-- Car A -->
+            <div class="product" data-car-a>
+              <div id="product-a-list-image" class="product-image">
+                <img src="/images/product-a/product-a-0.png" alt="product-a" />
 
-              <div class="product-title">2018 BMW X7 XDRIVE60E (CKD) 2.2s</div>
+                <div class="product-title">
+                  2018 BMW X7 XDRIVE60E (CKD) 2.2s
+                </div>
+              </div>
             </div>
 
-            <div id="add-product-a-btn-view" class="add-product">
+            <div class="add-product" data-car-a-add>
               <button
                 id="add-car-a"
                 aria-label="add car"
                 class="box-top-element"
+                onclick="popupModal()"
               >
                 <i class="bi bi-plus-square"></i>
               </button>
               <div class="box-btm-element">Add Car A</div>
             </div>
           </div>
-          <div id="product-a-list">
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements last-elements">RM 209,99</div>
+
+          <div class="product-data" data-car-a>
+            <div class="right-elements">RM 203,100</div>
+            <div class="right-elements">RM 2,225</div>
+            <div class="right-elements">BMW</div>
+            <div class="right-elements">323I</div>
+            <div class="right-elements">SUV</div>
+            <div class="right-elements">USED</div>
+            <div class="right-elements">WUE8226</div>
+            <div class="right-elements">AT</div>
+            <div class="right-elements">2.0</div>
+            <div class="right-elements">White</div>
+            <div class="right-elements">5</div>
+            <div class="right-elements">78,000 KM</div>
+            <div class="right-elements last-elements">2018</div>
           </div>
         </div>
         <div class="d-flex col">
           <div class="d-flex col flex-start right-elements-image image-box">
-            <div id="add-product-b-btn-view" class="add-product">
+            <!-- Car B  -->
+            <div class="product" data-car-b>
+              <div id="product-b-list-image" class="product-image">
+                <img src="/images/product-b/product-b-0.png" alt="product-b" />
+
+                <div class="product-title">
+                  2018 BMW X7 XDRIVE60E (CKD) 2.2s
+                </div>
+              </div>
+            </div>
+
+            <div class="add-product" data-car-b-add>
               <button
                 id="add-car-b"
                 aria-label="add car"
                 class="box-top-element"
+                data-car-b-add-trigger
               >
                 <i class="bi bi-plus-square"></i>
               </button>
               <div class="box-btm-element">Add Car B</div>
             </div>
           </div>
-          <div id="product-b-list">
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
-            <div class="right-elements">RM 209,99</div>
+
+          <div class="product-data" data-car-b>
+            <div class="right-elements">RM 93,500</div>
+            <div class="right-elements">RM 1,020</div>
+            <div class="right-elements">PROTON</div>
             <div class="right-elements">RM 209,99</div>
             <div class="right-elements">RM 209,99</div>
             <div class="right-elements">RM 209,99</div>
