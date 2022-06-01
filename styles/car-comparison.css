@@ -1,0 +1,92 @@
+@import url(/styles/enquiry-page.css);
+
+/* Car Comparison Page  */
+.car-comparison-section {
+  margin-top: var(--section-spacing-mobile);
+  padding-inline: var(--mobile-padding);
+}
+.d-flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.left-elements {
+  /* width: 6rem; */
+  padding: 1.2rem 1.2rem 1.2rem 0.4rem;
+  border-top: 0.5px solid var(--border-color);
+  border-left: 0.5px solid var(--border-color);
+  border-right: 0.5px solid var(--border-color);
+  background-color: var(--bg-grey-color);
+  font-size: var(--fs-11);
+}
+
+.image-box {
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.product-image {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product-image img {
+  object-fit: cover;
+  height: 65px;
+}
+
+.product-title {
+  padding: 0.5rem;
+  font-size: var(--fs-12);
+  text-align: center;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.add-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.last-elements {
+  border-bottom: 0.5px solid var(--border-color);
+}
+
+.right-elements-image {
+  width: 7rem;
+  border-top: 0.5px solid var(--border-color);
+  border-right: 0.5px solid var(--border-color);
+  border-bottom: 0.5px solid var(--border-color);
+}
+.right-elements {
+  width: 7rem;
+  padding: 1.2rem;
+  border-top: 0.5px solid var(--border-color);
+  border-right: 0.5px solid var(--border-color);
+  font-size: var(--fs-11);
+}
+
+.box-top-element {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.box-btm-element {
+  font-size: var(--fs-11);
+}
