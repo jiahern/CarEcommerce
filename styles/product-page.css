@@ -61,7 +61,7 @@
 .imageNumber {
   color: var(--text-color);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   position: absolute;
   top: 20px;
   left: 20px;
@@ -105,12 +105,12 @@
 }
 .product-description-sub-a .title {
   font-size: var(--fs-8);
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .product-description-sub-a .price {
   font-size: var(--fs-8);
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--text-price-color);
   margin-top: 0.8rem;
 }
@@ -118,7 +118,7 @@
 .product-description-sub-a .price-monthly {
   margin-top: 0.4rem;
   font-size: var(--fs-10);
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--text-price-color);
 }
 
@@ -161,7 +161,7 @@
   text-align: center;
   background-color: var(--main-color);
   font-size: var(--fs-9);
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: white;
   text-decoration: none;
   height: 70%;
@@ -200,7 +200,7 @@
   margin-left: 2rem;
   padding: 1rem 0 1rem;
   font-size: var(--fs-10);
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .product-details-right {
@@ -263,7 +263,7 @@
   }
   .product-description-sub-a .title {
     font-size: var(--fs-5);
-    font-weight: 700;
+    font-weight: var(--fw-700);
   }
 
   .product-description-sub-a .price {
@@ -292,7 +292,7 @@
   .product-details-left {
     width: 100%;
     font-size: var(--fs-9);
-    font-weight: 500;
+    font-weight: var(--fw-500);
   }
 
   /* Add (AT/MT) Text into the transmission data  */
@@ -311,7 +311,7 @@
   .product-details-right {
     margin-left: 2rem;
     font-size: var(--fs-9);
-    font-weight: 500;
+    font-weight: var(--fw-500);
   }
 
   /* Enquiry Button  */
@@ -325,7 +325,7 @@
     width: 100%;
     background-color: var(--main-color);
     font-size: var(--fs-7);
-    font-weight: 500;
+    font-weight: var(--fw-500);
     color: white;
     padding: 1.5rem 0 1.5rem 0;
     text-decoration: none;
@@ -345,7 +345,7 @@
   }
   .product-details-left-box {
     background-color: var(--bg-dark-color);
-    font-weight: 500;
+    font-weight: var(--fw-500);
     color: white;
     border-radius: var(--section-radius) 0 0 var(--section-radius);
   }

@@ -28,6 +28,7 @@
   --fs-12: 0.5rem;
 
   --fw-300: 300;
+  --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
@@ -150,7 +151,7 @@ button .nav-open-btn {
 .nav-title-logo {
   margin-left: 1rem;
   font-size: var(--fs-7);
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 
 .nav-close-btn {
@@ -178,7 +179,7 @@ button .nav-open-btn {
   font-size: var(--fs-9);
   position: absolute;
   left: 3.6rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--text-color) !important;
 }
 
@@ -230,7 +231,7 @@ button .nav-open-btn {
 }
 .home-main-title {
   font-size: var(--fs-8);
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .home-sub-title {
@@ -276,7 +277,7 @@ input.nosubmit {
 .submit {
   background-color: var(--main-color);
   font-size: var(--fs-11);
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: white;
   padding: 0.75em 2em;
   border-radius: var(--button-radius);
@@ -298,7 +299,7 @@ input.nosubmit {
   display: flex;
   gap: 0.4rem;
 
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .filter-elements {
@@ -312,7 +313,7 @@ input.nosubmit {
 .filter-button {
   background-color: var(--main-color);
   font-size: var(--fs-11);
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: white;
   height: 2.2rem;
   width: 8rem;
@@ -334,7 +335,7 @@ input.nosubmit {
   margin-top: var(--section-spacing-mobile);
 }
 .car-title {
-  font-weight: 700;
+  font-weight: var(--fw-700);
   font-size: var(--fs-8);
 }
 
@@ -377,19 +378,19 @@ input.nosubmit {
 
 .car-description .title {
   margin-bottom: 0.3rem;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: var(--text-color);
 }
 
 .car-description .year {
   font-size: var(--fs-10);
-  font-weight: 400;
+  font-weight: var(--fw-400);
   color: var(--text-grey-light-color);
 }
 
 .car-description .mileage {
   font-size: var(--fs-10);
-  font-weight: 400;
+  font-weight: var(--fw-400);
   margin-top: 0.3rem;
   color: var(--text-grey-light-color);
 }
@@ -398,14 +399,14 @@ input.nosubmit {
   /* font-family: var(--font-secondary); */
   margin-top: 1.4rem;
   color: var(--text-price-color);
-  font-weight: 700;
+  font-weight: var(--fw-700);
   font-size: var(--fs-8);
 }
 
 .car-description .price-monthly {
   /* font-family: var(--font-secondary); */
   margin-top: 0.4rem;
-  font-weight: 400;
+  font-weight: var(--fw-400);
   font-size: var(--fs-11);
   color: var(--text-grey-light-color);
 }
@@ -416,7 +417,7 @@ input.nosubmit {
   bottom: 0;
   background-color: var(--main-color);
   font-size: var(--fs-9);
-  font-weight: 500;
+  font-weight: var(--fw-500);
   color: white;
   height: 3.5rem;
   width: 11rem;
@@ -440,7 +441,7 @@ input.nosubmit {
 .footer-element .title {
   margin-top: 0px;
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  font-weight: var(--fw-600);
   font-size: var(--fs-8);
 }
 
@@ -450,7 +451,7 @@ input.nosubmit {
 
 .footer-element div {
   margin-top: 0.5rem;
-  font-weight: 300;
+  font-weight: var(--fw-300);
 }
 .footer-element ul li {
   margin-top: 1rem;
@@ -500,7 +501,7 @@ input.nosubmit {
     padding-left: 2rem;
     display: flex;
     gap: 3em;
-    font-weight: 500;
+    font-weight: var(--fw-500);
   }
 
   .header .container {
@@ -579,7 +580,7 @@ input.nosubmit {
     height: 2.5rem;
     width: 10rem;
     font-size: var(--fs-10);
-    font-weight: 600;
+    font-weight: var(--fw-600);
     color: var(--text-color);
     background-color: white;
     border: 1px solid #ccc;

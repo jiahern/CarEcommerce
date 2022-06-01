@@ -4,7 +4,7 @@
 .back-button {
   position: absolute;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   color: var(--text-color);
   z-index: 1;
 }
@@ -16,7 +16,7 @@
   display: inline-block;
   text-align: center;
   font-size: var(--fs-8);
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 /* Product Section  */
@@ -52,7 +52,7 @@
 .product-description-sub-a.enquiry .price {
   margin-top: 0.5rem;
   font-size: var(--fs-10);
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .wrap {
@@ -72,7 +72,7 @@
 .right-value {
   width: 40%;
   color: var(--text-price-color);
-  font-weight: 700;
+  font-weight: var(--fw-700);
 }
 
 .product-description-sub-b.enquiry {
@@ -92,7 +92,7 @@
 .form > label {
   display: block;
   padding: 0.5rem 0 0.5rem 0;
-  font-weight: 500;
+  font-weight: var(--fw-500);
 }
 .form > input {
   border: 1px solid var(--border-color);
@@ -102,6 +102,70 @@
   font-size: var(--fs-10);
 }
 
+/*  */
+/* Modal Section  */
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20vh auto 0px auto;
+  padding: 5vh 5vh 7vh 5vh;
+  border: 1px solid var(--border-color);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.modal-content .title {
+  text-align: center;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
+.modal-content .check {
+  color: #5dc54d;
+  font-size: 80px;
+}
+
+.modal-content .title-2 {
+  font-size: var(--fs-8);
+}
+
+.modal-content .title-3 {
+  font-size: var(--fs-10);
+  text-align: center;
+  color: var(--text-grey-light-color);
+}
+
+.modal-content .create-button {
+  background-color: var(--main-color);
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  color: white;
+  border-radius: var(--section-radius);
+  text-align: center;
+  font-weight: var(--fw-500);
+}
+
+/*  */
+/* Responsive in Mobile Screen  */
 @media (max-width: 992px) {
   .enquiry-title {
     display: none;
@@ -115,6 +179,8 @@
   }
 }
 
+/*  */
+/* Responsive in Desktop Screen */
 @media (min-width: 992px) {
   /* Header Section  */
   .back-button {
@@ -131,7 +197,7 @@
     padding-inline-start: var(--product-desktop-padding);
     margin-top: var(--section-spacing-mobile);
     font-size: var(--fs-5);
-    font-weight: 700;
+    font-weight: var(--fw-700);
   }
   .product-section.enquiry {
     display: flex;
@@ -205,5 +271,30 @@
 
   .descrip-benefit {
     font-size: var(--fs-9);
+  }
+
+  /* Modal Pop-up Section  */
+  .modal-content {
+    width: 50%;
+  }
+
+  .modal-content .title {
+    font-size: var(--fs-5);
+  }
+
+  .modal-content .check {
+    font-size: 100px;
+  }
+
+  .modal-content .title-2 {
+    font-size: var(--fs-6);
+  }
+
+  .modal-content .title-3 {
+    font-size: var(--fs-9);
+  }
+
+  .modal-content .create-button {
+    font-size: var(--fs-8);
   }
 }
