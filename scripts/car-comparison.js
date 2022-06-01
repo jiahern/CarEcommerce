@@ -5,6 +5,13 @@ function popupModal() {
   modal.style.display = "block";
 }
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
 const carA = document.querySelectorAll("[data-car-a]");
 const carB = document.querySelectorAll("[data-car-b]");
 const carA_Add = document.querySelector("[data-car-a-add");

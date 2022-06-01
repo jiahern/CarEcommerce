@@ -62,13 +62,13 @@
 }
 
 .right-elements-image {
-  width: 7.5rem;
+  width: 7rem;
   border-top: 0.5px solid var(--border-color);
   border-right: 0.5px solid var(--border-color);
   border-bottom: 0.5px solid var(--border-color);
 }
 .right-elements {
-  width: 7.5rem;
+  width: 7rem;
   padding: 1.2rem;
   border-top: 0.5px solid var(--border-color);
   border-right: 0.5px solid var(--border-color);
@@ -96,4 +96,56 @@
 }
 .product-data {
   display: none;
+}
+
+/*  */
+/* Modal Section  */
+/* Modal Header */
+.modal-header {
+  display: flex;
+  height: 52.3px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.05);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Modal Content */
+.modal-content-car-comparison {
+  background-color: #fefefe;
+  margin: 5vh auto 2vh auto;
+  border: 1px solid var(--border-color);
+  width: 90%;
+  animation: fadeIn 0.5s;
+}
+
+.search-box.car-compa {
+  margin-top: 1rem;
+}
+
+.cars-container.car-compa {
+  margin-top: 1rem;
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+
+.car-image {
+  height: 180px;
+  object-fit: cover;
+}
+.car-description-car-compa {
+  color: white;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  background-color: var(--main-color);
+  border-radius: 0 0 var(--section-radius) var(--section-radius);
 }
