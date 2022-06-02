@@ -50,11 +50,13 @@ function triggerCarB() {
   carB_Add.style.display = "none";
 }
 
+// Selecting Car A in Car Comparison
 function selectCarA() {
   triggerCarA();
   modal.style.display = "none";
 }
 
+// Selecting Car B in Car Comparison
 function selectCarB() {
   triggerCarB();
   modal.style.display = "none";

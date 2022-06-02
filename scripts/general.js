@@ -23,3 +23,29 @@ const searchResults = "search-result.html";
 if (href.includes(searchResults)) {
   document.querySelector("[data-filter]").style.marginTop = "2rem";
 }
+
+// Filter Modal
+// Modal
+var modal = document.getElementById("myModal");
+
+// get the close button
+var close = document.getElementById("close");
+
+// Change the modal title according to clicked button
+var modalTitle = document.querySelector("[data-modal-title]");
+
+function popupModal() {
+  modal.style.display = "block";
+}
+
+// Close the modal when x is clicked
+close.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

@@ -6,23 +6,6 @@
   padding-inline: var(--mobile-padding);
 }
 
-/* General css for building table  */
-.d-flex {
-  display: flex;
-}
-
-.row {
-  flex-direction: row;
-}
-
-.col {
-  flex-direction: column;
-}
-
-.flex-start {
-  align-items: flex-start;
-}
-
 /* Table Data Section */
 
 /* Proportion of the each column  */

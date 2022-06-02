@@ -166,7 +166,7 @@
             </div>
           </div>
           <div class="filter-elements">
-            <button class="filter-button">Brand</button>
+            <button onclick="popupModal()" class="filter-button">Brand</button>
             <button class="filter-button">Model</button>
             <button class="filter-button">Condition</button>
             <button class="filter-button">Body Type</button>
@@ -179,7 +179,7 @@
 
     <!-- Product List  -->
     <section class="car-section">
-      <section class="container">
+      <div class="container">
         <div class="car-title">Search Results:</div>
         <div class="cars-container">
           <!-- Singe Item Car -->
@@ -357,8 +357,36 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
+
+    <!-- Filter Search Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content  -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container">
+            <div class="modal-title" data-modal-title>Brand</div>
+            <div id="close" data-close>&times;</div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="filter-elements popupModal">
+            <a href="/BMW-search-result.html">
+              <button class="filter-button-modal">BMW</button>
+            </a>
+            <button class="filter-button-modal">Audi</button>
+            <button class="filter-button-modal">Lamborghini</button>
+            <button class="filter-button-modal">Mercedez</button>
+            <button class="filter-button-modal">Perodua</button>
+            <button class="filter-button-modal">Proton</button>
+            <button class="filter-button-modal">Volvo</button>
+            <button class="filter-button-modal">Kia</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer Section  -->
     <footer>
@@ -397,6 +425,7 @@
       </div>
     </footer>
     <!-- Custom Javascript -->
-    <script src="/scripts/script.js"></script>
+    <script src="/scripts/general.js"></script>
+    <script src="/scripts/car-comparison.js"></script>
   </body>
 </html>
