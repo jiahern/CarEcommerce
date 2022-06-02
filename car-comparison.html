@@ -159,7 +159,7 @@
 
     <section class="car-comparison-section">
       <div class="d-flex row flex-start">
-        <div class="d-flex col">
+        <div class="d-flex col left-table">
           <div class="d-flex flex-start left-elements image-box">Car Model</div>
           <div class="d-flex flex-start left-elements">Price</div>
           <div class="d-flex flex-start left-elements">Instalment</div>
@@ -177,25 +177,30 @@
             Manufa. Year
           </div>
         </div>
-        <div class="d-flex col">
+        <div class="d-flex col right-table">
           <div class="d-flex col flex-start right-elements-image image-box">
-            <!-- Car A -->
+            <!-- Car A Image-->
             <div class="product" data-car-a>
-              <div id="product-a-list-image" class="product-image">
-                <img src="/images/product-a/product-a-0.png" alt="product-a" />
+              <a onclick="popupModal(0)">
+                <div id="product-a-list-image" class="product-image">
+                  <img
+                    src="/images/product-a/product-a-0.png"
+                    alt="product-a"
+                  />
 
-                <div class="product-title">
-                  2018 BMW X7 XDRIVE60E (CKD) 2.2s
-                </div>
-              </div>
+                  <div class="product-title">
+                    2018 BMW X7 XDRIVE60E (CKD) 2.2s
+                  </div>
+                </div></a
+              >
             </div>
 
+            <!-- Car A Select Button  -->
             <div class="add-product" data-car-a-add>
               <button
-                id="add-car-a"
                 aria-label="add car"
                 class="box-top-element"
-                onclick="popupModal()"
+                onclick="popupModal(0)"
               >
                 <i class="bi bi-plus-square"></i>
               </button>
@@ -219,17 +224,22 @@
             <div class="right-elements last-elements">2018</div>
           </div>
         </div>
-        <div class="d-flex col">
+        <div class="d-flex col right-table">
           <div class="d-flex col flex-start right-elements-image image-box">
             <!-- Car B  -->
             <div class="product" data-car-b>
-              <div id="product-b-list-image" class="product-image">
-                <img src="/images/product-b/product-b-0.png" alt="product-b" />
+              <a onclick="popupModal(1)">
+                <div id="product-b-list-image" class="product-image">
+                  <img
+                    src="/images/product-b/product-b-0.png"
+                    alt="product-b"
+                  />
 
-                <div class="product-title">
-                  2018 BMW X7 XDRIVE60E (CKD) 2.2s
+                  <div class="product-title">
+                    2018 BMW X7 XDRIVE60E (CKD) 2.2s
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="add-product" data-car-b-add>
@@ -237,6 +247,7 @@
                 id="add-car-b"
                 aria-label="add car"
                 class="box-top-element"
+                onclick="popupModal(1)"
                 data-car-b-add-trigger
               >
                 <i class="bi bi-plus-square"></i>
@@ -261,13 +272,42 @@
             <div class="right-elements last-elements">RM 209,99</div>
           </div>
         </div>
+
+        <!-- Car C Select Button  -->
+        <div class="d-flex col right-table additional">
+          <div class="d-flex col flex-start right-elements-image image-box">
+            <div class="add-product" data-car-a-add>
+              <button aria-label="add car" class="box-top-element" disabled>
+                <i class="bi bi-plus-square"></i>
+              </button>
+              <div class="box-btm-element">Add Car C</div>
+            </div>
+          </div>
+        </div>
+        <!-- Car D Select Button  -->
+        <div class="d-flex col right-table additional">
+          <div class="d-flex col flex-start right-elements-image image-box">
+            <div class="add-product" data-car-a-add>
+              <button aria-label="add car" class="box-top-element" disabled>
+                <i class="bi bi-plus-square"></i>
+              </button>
+              <div class="box-btm-element">Add Car D</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Modal Popup  -->
-    <div id="myModal" class="modal" style="display: block">
+    <div id="myModal" class="modal">
       <!-- Modal content  -->
       <div class="modal-content-car-comparison">
-        <div class="modal-header">Add Car A</div>
+        <div class="modal-header">
+          <div class="container">
+            <div class="modal-title" data-modal-title>Add Car A</div>
+            <div id="close">&times;</div>
+          </div>
+        </div>
+
         <div class="modal-body">
           <div class="search-box car-compa">
             <form action="" class="nosubmit">
@@ -275,36 +315,41 @@
                 class="nosubmit"
                 placeholder="Search for cars by Brand, Model"
               />
-              <button type="" class="submit">SEARCH</button>
+              <button disabled class="submit">SEARCH</button>
             </form>
           </div>
 
           <div class="cars-container car-compa">
             <!-- Singe Item Car -->
+
             <div class="box car-compa">
-              <div class="d-flex col">
-                <img
-                  class="car-image"
-                  src="/images/product-a/product-a-0.png"
-                  alt="product a"
-                />
-                <div class="car-description-car-compa">
-                  2018 BMW X7 XDRIVE60E (CKD) 2.2s
-                </div>
-              </div>
+              <a onclick="selectCarA()">
+                <div class="d-flex col">
+                  <img
+                    class="car-image"
+                    src="/images/product-a/product-a-0.png"
+                    alt="product a"
+                  />
+                  <div class="car-description-car-compa">
+                    2018 BMW X7 XDRIVE60E (CKD) 2.2s
+                  </div>
+                </div></a
+              >
             </div>
             <!-- Singe Item Car -->
             <div class="box">
-              <div class="d-flex col">
-                <img
-                  class="car-image"
-                  src="/images/product-b/product-b-0.png"
-                  alt="product b"
-                />
-                <div class="car-description-car-compa">
-                  2019 Proton X70 EXECUTIVE AWD 1.8
+              <a onclick="selectCarB()">
+                <div class="d-flex col">
+                  <img
+                    class="car-image"
+                    src="/images/product-b/product-b-0.png"
+                    alt="product b"
+                  />
+                  <div class="car-description-car-compa">
+                    2019 Proton X70 EXECUTIVE AWD 1.8
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <!-- Singe Item Car -->
             <div class="box">

@@ -5,6 +5,8 @@
   margin-top: var(--section-spacing-mobile);
   padding-inline: var(--mobile-padding);
 }
+
+/* General css for building table  */
 .d-flex {
   display: flex;
 }
@@ -21,8 +23,19 @@
   align-items: flex-start;
 }
 
+/* Table Data Section */
+
+/* Proportion of the each column  */
+.left-table {
+  width: 30%;
+}
+
+.right-table {
+  width: 35%;
+}
+
 .left-elements {
-  /* width: 6rem; */
+  width: 100%;
   padding: 1.2rem 1.2rem 1.2rem 0.4rem;
   border-top: 0.5px solid var(--border-color);
   border-left: 0.5px solid var(--border-color);
@@ -32,12 +45,15 @@
 }
 
 .image-box {
-  height: 6rem;
+  height: 7rem;
   justify-content: center;
   align-items: center;
   background-color: white;
 }
 
+.product-image:is(:hover, :focus) {
+  cursor: pointer;
+}
 .product-image img {
   object-fit: cover;
   height: 65px;
@@ -62,13 +78,11 @@
 }
 
 .right-elements-image {
-  width: 7rem;
   border-top: 0.5px solid var(--border-color);
   border-right: 0.5px solid var(--border-color);
   border-bottom: 0.5px solid var(--border-color);
 }
 .right-elements {
-  width: 7rem;
   padding: 1.2rem;
   border-top: 0.5px solid var(--border-color);
   border-right: 0.5px solid var(--border-color);
@@ -85,7 +99,7 @@
   font-size: var(--fs-11);
 }
 
-/* Car A  Manipulate with JS*/
+/* Car Manipulate with JS*/
 .product-image {
   display: flex;
   flex-direction: column;
@@ -104,13 +118,37 @@
 .modal-header {
   display: flex;
   height: 52.3px;
+  position: relative;
   background: var(--bg-color);
   color: var(--text-color);
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.05);
   font-size: var(--fs-8);
   font-weight: var(--fw-700);
+}
+
+.modal-title {
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: var(--fw-500);
+}
+
+#close:hover,
+#close:focus {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Modal Body */
@@ -137,6 +175,7 @@
   margin-bottom: 2rem;
 }
 
+/* Modal Car Option  */
 .car-image {
   height: 180px;
   object-fit: cover;
@@ -148,4 +187,20 @@
   text-align: center;
   background-color: var(--main-color);
   border-radius: 0 0 var(--section-radius) var(--section-radius);
+}
+
+/*  */
+/* Responsive in Mobile Screen  */
+@media (max-width: 992px) {
+  .additional {
+    display: none;
+  }
+}
+
+/*  */
+/* Responsive in Desktop Screen */
+@media (min-width: 992px) {
+  .additional {
+    display: flex;
+  }
 }

@@ -1,9 +1,25 @@
 // Modal
 var modal = document.getElementById("myModal");
 
-function popupModal() {
+// get the close button
+var close = document.getElementById("close");
+
+//
+var modalTitle = document.querySelector("[data-modal-title]");
+
+function popupModal(n) {
+  if (n === 0) {
+    modalTitle.innerHTML = "Add Car A";
+  } else if (n === 1) {
+    modalTitle.innerHTML = "Add Car B";
+  }
   modal.style.display = "block";
 }
+
+// Close the modal when x is clicked
+close.onclick = function () {
+  modal.style.display = "none";
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
@@ -32,4 +48,14 @@ function triggerCarB() {
   }
 
   carB_Add.style.display = "none";
+}
+
+function selectCarA() {
+  triggerCarA();
+  modal.style.display = "none";
+}
+
+function selectCarB() {
+  triggerCarB();
+  modal.style.display = "none";
 }
