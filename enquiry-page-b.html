@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the telephone styling of dark blue -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>95 Auto Group</title>
+
+    <link rel="icon" href="/images/logo-yellow.png" type="image/icon type" />
+
+    <!-- Jqeury Import  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Font Awesome Import  -->
+    <script
+      src="https://kit.fontawesome.com/7146d6339d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Icon Import -->
+    <link
+      rel="stylesheet"
+      href="/styles/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Icon from Bootstrap Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/product-page.css" />
+    <link rel="stylesheet" href="styles/enquiry-page.css" />
+
+    <!-- Google font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <div>
+          <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="#020102"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <a
+            href="/product-page-a.html"
+            aria-label="Back Button"
+            class="back-button"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </a>
+        </div>
+        <div class="section-title">Enquiry Page</div>
+        <!-- Logo Icon -->
+        <a href="/index.html" class="logo top">
+          <img src="/images/logo.png" alt="95 Auto Group Logo" />
+        </a>
+
+        <!-- Navbar -->
+        <nav class="navbar" data-navbar>
+          <div class="nav-title">
+            <button
+              class="nav-close-btn"
+              data-nav-close-btn
+              aria-label="Close Menu"
+            >
+              <!-- <i class="gg-close"></i> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="#020102"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+            <a href="#" class="logo">
+              <img src="/images/logo.png" alt="95 Auto Group Logo" />
+            </a>
+            <span class="nav-title-logo">95 Auto Group</span>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/index.html">
+                <button class="nav-action-btn">
+                  <i class="fa fa-home navbar-item-icon" aria-hidden="true"></i>
+                  <span href="#home" class="navbar-link">Home</span>
+                </button>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="/car-comparison.html">
+                <button class="nav-action-btn">
+                  <i
+                    class="fa fa-exchange navbar-item-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span href="#cars" class="navbar-link">Car Comparison</span>
+                </button>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-action-btn">
+                <i
+                  class="fa fa-id-card-o navbar-item-icon"
+                  aria-hidden="true"
+                ></i>
+                <span href="#about" class="navbar-link">About</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-action-btn">
+                <i class="fa fa-car navbar-item-icon" aria-hidden="true"></i>
+                <span href="#car-list" class="navbar-link">Gallery</span>
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="nav-action-btn">
+                <i class="fa fa-phone navbar-item-icon" aria-hidden="true"></i>
+                <span href="#contactus" class="navbar-link">Contact Us</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Section  -->
+    <div class="enquiry-title">Enquiry Page</div>
+    <section class="product-section enquiry">
+      <div class="product-container-top enquiry">
+        <!-- Product Image  -->
+        <div class="product-image-section enquiry">
+          <img src="images/product-b/product-b-0.png" alt="product-b" />
+        </div>
+
+        <!-- Product Description  -->
+        <div class="product-description enquiry">
+          <div class="product-description-sub-a enquiry">
+            <div class="title">2019 Proton X70 EXECUTIVE AWD 1.8</div>
+            <div class="price">RM 93,500</div>
+            <div class="wrap">
+              <div class="wrap-row">
+                <div class="left-title">Deposit Fees</div>
+                <div class="right-value">RM 9,350</div>
+              </div>
+              <div class="wrap-row">
+                <div class="left-title">Balance</div>
+                <div class="right-value">RM 84,150</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <!-- Product Description  -->
+        <div class="product-description enquiry desktop">
+          <div class="product-description-sub-a enquiry">
+            <div class="title">2019 Proton X70 EXECUTIVE AWD 1.8</div>
+            <div class="price">RM 93,500</div>
+            <div class="wrap">
+              <div class="wrap-row">
+                <div class="left-title">Deposit Fees</div>
+                <div class="right-value">RM 9,350</div>
+              </div>
+              <div class="wrap-row">
+                <div class="left-title">Balance</div>
+                <div class="right-value">RM 84,150</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-description-sub-b enquiry">
+          <ul>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>All inclusive Price</div>
+            </li>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>Road Tax</div>
+            </li>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>1-Year Warranty</div>
+            </li>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>Ownership Transfer Fee</div>
+            </li>
+            <li class="descrip-benefit enquiry">
+              <div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>Loan Processing Fee</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="enquiry-form">
+        <div class="car-title">Enquiry Form</div>
+
+        <form id="myForm" class="" onsubmit="popupModal()">
+          <div class="form">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Fill in your name" required />
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Fill in your email" required />
+            <label for="phone"><b>Phone Number</b></label>
+            <input
+              type="tel"
+              placeholder="Fill in your phone number"
+              required
+            />
+            <label for="message"><b>Message</b></label>
+            <input
+              type="text"
+              placeholder="Please drop any message here"
+              required
+            />
+          </div>
+
+          <div class="enquiry-button-mobile-wrapper">
+            <button type="submit" class="enquiry-button-mobile">SUBMIT</button>
+          </div>
+
+          <button type="submit" class="enquiry-button-desktop enquiry">
+            SUBMIT
+          </button>
+        </form>
+      </section>
+    </section>
+
+    <!-- Modal Popup  -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="flex">
+          <div class="title">Enquiry ID: #00A1</div>
+          <div class="check">
+            <i class="bi bi-check-circle"></i>
+          </div>
+          <div class="title-2">Success</div>
+          <div class="title-3">
+            Your enquiry has been successfully received.
+          </div>
+          <a href="/index.html" class="create-button">Create an Account</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section  -->
+    <footer>
+      <div class="footer-subA">
+        <div class="container">
+          <div class="footer-element">
+            <div class="title">Quick Link</div>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/car-comparison.html">Car Comparison</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#car-list">Gallery</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-element">
+            <div class="title">Contact Info:</div>
+            <div>Address:</div>
+            <div class="address">
+              LG-31a & LG-32, LG Floor, Viva Shopping Mall, No 85, Jalan Loke
+              Yew, 55200 Kuala Lumpur
+            </div>
+            <div>Email: sales@95autogroup.my</div>
+            <div>Phone: +603 - 9770 8166</div>
+            <div>WhatsApp : +6014 9333 976</div>
+            <div>Operation hour :</div>
+            <div>Mon - Sun 10am - 10pm</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright  -->
+      <div class="copyright">
+        <p>&#169; 95 Auto Group All Right Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Custom Javascript -->
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/product-page.js"></script>
+    <script src="/scripts/enquiry-page.js"></script>
+  </body>
+</html>

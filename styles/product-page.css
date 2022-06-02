@@ -19,6 +19,18 @@
   position: relative;
 }
 
+.back {
+  position: absolute;
+  font-size: var(--fs-6);
+  top: 1rem;
+  left: 1rem;
+}
+
+.slidesImage img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -63,8 +75,8 @@
   font-size: 1rem;
   font-weight: var(--fw-500);
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 1.5rem;
+  right: 1.8rem;
 }
 
 .product-image-gallery {
@@ -76,6 +88,7 @@
 
 /* Add a transparency blurry effect for thumnbail images */
 .thumbnailImage {
+  height: 100%;
   width: 100%;
   border-radius: var(--button-radius);
   opacity: 0.6;
@@ -227,13 +240,17 @@
 
   /* Image Section  */
   .product-image-section {
-    max-width: 50%;
+    width: 50%;
+  }
+
+  .back {
+    display: none;
   }
 
   .imageNumber {
-    font-size: var(--fs-8);
-    left: 6%;
-    top: 9%;
+    font-size: var(--fs-7);
+    left: 2.5rem;
+    top: 2.5rem;
   }
 
   /* Next & previous buttons */
@@ -255,6 +272,7 @@
   /* Product Description  */
 
   .product-description {
+    width: 50%;
     padding-inline: 0;
     padding-inline-start: 3rem;
   }

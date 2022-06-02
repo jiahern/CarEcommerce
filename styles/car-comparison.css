@@ -213,6 +213,7 @@
     padding-inline: var(--section-spacing-desktop);
   }
 
+  /* Table Data Resize  */
   .left-elements {
     font-size: var(--fs-9);
     padding-left: 0.8rem;
@@ -245,5 +246,11 @@
 
   .product-image img {
     height: 12rem;
+  }
+
+  /* Modal Resize  */
+  .cars-container.car-compa {
+    margin-top: var(--section-spacing-desktop);
+    margin-bottom: var(--section-spacing-desktop);
   }
 }
