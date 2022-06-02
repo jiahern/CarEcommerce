@@ -83,6 +83,11 @@
 }
 
 /* Form Section  */
+.enquiry-form-title {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-8);
+}
+
 .enquiry-form {
   margin-top: var(--section-spacing-mobile);
 }
@@ -240,6 +245,10 @@
   }
 
   /* Form Section  */
+
+  .enquiry-form-title {
+    font-size: var(--fs-7);
+  }
   .enquiry-form {
     margin-top: 0;
   }
