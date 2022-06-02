@@ -4,7 +4,7 @@ var modal = document.getElementById("myModal");
 // get the close button
 var close = document.getElementById("close");
 
-//
+// Change the modal title according to clicked button
 var modalTitle = document.querySelector("[data-modal-title]");
 
 function popupModal(n) {
