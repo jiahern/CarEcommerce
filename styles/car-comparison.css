@@ -45,21 +45,35 @@
 }
 
 .image-box {
-  height: 7rem;
+  height: 6rem;
   justify-content: center;
   align-items: center;
   background-color: white;
 }
 
+.product {
+  width: 100%;
+}
+
+.product-image {
+  position: relative;
+  text-align: center;
+}
+
 .product-image:is(:hover, :focus) {
   cursor: pointer;
 }
+
 .product-image img {
+  height: 6rem;
+  width: 100%;
   object-fit: cover;
-  height: 65px;
 }
 
 .product-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
   padding: 0.5rem;
   font-size: var(--fs-12);
   text-align: center;
@@ -100,11 +114,6 @@
 }
 
 /* Car Manipulate with JS*/
-.product-image {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 .product {
   display: none;
 }
@@ -200,7 +209,41 @@
 /*  */
 /* Responsive in Desktop Screen */
 @media (min-width: 992px) {
+  .car-comparison-section {
+    padding-inline: var(--section-spacing-desktop);
+  }
+
+  .left-elements {
+    font-size: var(--fs-9);
+    padding-left: 0.8rem;
+    font-weight: var(--fw-700);
+  }
+
+  .right-elements {
+    font-size: var(--fs-9);
+  }
+  .product-title {
+    font-size: var(--fs-10);
+  }
+
+  .box-top-element {
+    font-size: var(--fs-4);
+  }
+
+  .box-btm-element {
+    font-size: var(--fs-9);
+  }
+
   .additional {
     display: flex;
+  }
+
+  /* Product Image Resize  */
+  .image-box {
+    height: 12rem;
+  }
+
+  .product-image img {
+    height: 12rem;
   }
 }
