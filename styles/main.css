@@ -506,7 +506,7 @@ input.nosubmit {
   top: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--border-color);
-  width: 50%;
+  width: 90%;
   animation: fadeIn 0.5s;
 }
 
@@ -516,7 +516,7 @@ input.nosubmit {
 
 .filter-button-modal {
   height: 2.5rem;
-  width: 10rem;
+  width: 8rem;
   font-size: var(--fs-10);
   font-weight: var(--fw-600);
   color: var(--text-color);
@@ -728,5 +728,14 @@ input.nosubmit {
     flex-direction: row;
     padding-inline: 8%;
     gap: 10rem;
+  }
+
+  /* Modal Section  */
+
+  .modal-content {
+    width: 30%;
+  }
+  .filter-button-modal {
+    width: 10rem;
   }
 }
