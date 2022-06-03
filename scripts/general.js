@@ -1,5 +1,37 @@
 "use strict";
 
+//
+// Scroll To Top Button Section
+document.addEventListener("scroll", handleScroll);
+
+// Get the scroll button
+var scrollTopBtn = document.querySelector("[scrollTopButton]");
+
+function handleScroll() {
+  var scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const halfRatio = 0.5;
+
+  if (document.documentElement.scrollTop / scrollHeight > halfRatio) {
+    //show button
+    scrollTopBtn.style.display = "block";
+  } else {
+    //hide button
+    scrollTopBtn.style.display = "none";
+  }
+}
+
+scrollTopBtn.addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+//
 // Navbar Toggle
 const overlay = document.querySelector("[data-overlay]");
 const navOpenButton = document.querySelector("[data-nav-open-btn]");

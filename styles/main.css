@@ -91,6 +91,33 @@ body {
   align-items: flex-start;
 }
 
+/* Scroll to top button  */
+.scrollToTopBtn {
+  background-color: var(--bg-dark-color);
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 100;
+  display: none;
+  font-weight: var(--fs-9);
+  color: white;
+  padding: 1.3rem;
+  border-radius: var(--section-radius);
+  cursor: pointer;
+  animation: fadeIn 0.5s;
+}
+
+/*  */
+/* Animation Section  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*  */
 /* Navigation Bar  */
 .logo img {
@@ -283,6 +310,15 @@ button .nav-open-btn {
     padding-block-start: 70px;
     background-color: white;
   }
+
+  /* Scroll to Top Button  */
+  .scrollToTopBtn {
+    right: 50px;
+    bottom: 50px;
+    padding: 1.5rem;
+    font-size: var(--fs-7);
+  }
+
   /* Header  */
 
   .nav-open-btn,
