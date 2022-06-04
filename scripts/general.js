@@ -11,7 +11,7 @@ function handleScroll() {
   var scrollHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  const halfRatio = 0.5;
+  const halfRatio = 0.3;
 
   if (document.documentElement.scrollTop / scrollHeight > halfRatio) {
     //show button
@@ -50,8 +50,9 @@ for (let i = 0; i < navElements.length; i++) {
 const href = window.location.href;
 
 // Target href search-result
-const searchResults = "search-result.html";
+const searchResults = "search-result";
 
+// If the file has text of "search-result" then it will change the margin
 if (href.includes(searchResults)) {
   document.querySelector("[data-filter]").style.marginTop = "2rem";
 }
