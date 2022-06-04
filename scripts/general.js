@@ -11,9 +11,9 @@ function handleScroll() {
   var scrollHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  const halfRatio = 0.3;
+  const triggerRatio = 0.3;
 
-  if (document.documentElement.scrollTop / scrollHeight > halfRatio) {
+  if (document.documentElement.scrollTop / scrollHeight > triggerRatio) {
     //show button
     scrollTopBtn.style.display = "block";
   } else {
