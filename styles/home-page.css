@@ -55,7 +55,7 @@ input.nosubmit {
   border-radius: var(--button-radius);
   width: 60%;
   padding: 11px 4px 11px 40px;
-  background: transparent url(/images/search.svg) no-repeat 13px center;
+  background: transparent url(images/search.svg) no-repeat 13px center;
 }
 
 .submit {
