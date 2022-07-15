@@ -363,4 +363,10 @@ button .nav-open-btn {
   .logo.top {
     margin-left: 4rem;
   }
+
+  .footer-subA .container {
+    flex-direction: row;
+    padding-inline: 8%;
+    gap: 10rem;
+  }
 }
